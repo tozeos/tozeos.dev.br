@@ -38,7 +38,7 @@ export const projects = [
         tags: ["html", "css", "javascript"],
         main: ["JavaScript"],
         source: "https://github.com/tozeos/ipa-app",
-        demo: "http://ipatraining.netlify.app",
+        demo: "https://tozeos.dev.br/ipa-app/",
     },
 
     {
