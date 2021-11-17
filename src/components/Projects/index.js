@@ -1,6 +1,5 @@
 import {Card, CardContainer, H2, ProjectLinks, ProjectsSection, Tags} from "./Projects.style";
 import {projects} from "../variables";
-import Link from "next/Link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCode, faExternalLinkAlt, faTags} from "@fortawesome/free-solid-svg-icons";
 
@@ -25,22 +24,18 @@ export const Projects = () => {
                                     source === "#" ? "none" : "block"
                                 }`,
                             }}>
-                                <Link href={source} passHref>
-                                    <a target="_blank" rel="noopener noreferrer nofollow">
-                                        <FontAwesomeIcon icon={faCode}/> Código-fonte
-                                    </a>
-                                </Link>
+                                <a href={source} target="_blank" rel="noopener noreferrer nofollow">
+                                    <FontAwesomeIcon icon={faCode}/> Código-fonte
+                                </a>
                             </li>
                             <li style={{
                                 display: `${
                                     demo === "#" ? "none" : "block"
                                 }`,
                             }}>
-                                <Link href={demo} passHref>
-                                    <a target="_blank" rel="noopener noreferrer nofollow">
-                                        <FontAwesomeIcon icon={faExternalLinkAlt}/> Demonstração
-                                    </a>
-                                </Link>
+                                <a href={demo} target="_blank" rel="noopener noreferrer nofollow">
+                                    <FontAwesomeIcon icon={faExternalLinkAlt}/> Demonstração
+                                </a>
                             </li>
                         </ProjectLinks>
                     </Card>

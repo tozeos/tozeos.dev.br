@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {colors} from "../variables";
+import blob from "../../img/blob.svg"
 
 
 export const Donate = styled.p`
@@ -38,9 +39,13 @@ export const AboutSection = styled.section`
 `;
 
 export const Drawing = styled.div`
-  background: url("/blob.svg") no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(${blob}) no-repeat 25px;
   background-size: contain;
-  width: min(75%, 600px);
+  max-width: 500px;
+  min-width: 250px;
 
   img {
     width: inherit;

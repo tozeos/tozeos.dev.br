@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {colors} from "../variables";
+import underline from "../../img/underline.svg"
 
 export const HeaderContainer = styled.div`
   color: ${colors.white};
@@ -24,7 +25,7 @@ export const HeaderContainer = styled.div`
       :after {
         position: absolute;
         content: '';
-        background: url("underline.svg");
+        background: url(${underline});
         width: 283px;
         height: 18px;
         left: -5%;

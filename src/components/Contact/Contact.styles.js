@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {colors} from "../variables";
+import highlight from "../../img/highlight2.svg"
 
 export const ContactSection = styled.section`
   display: flex;
@@ -31,7 +32,7 @@ export const Email = styled.p`
     content: '';
     width: 100px;
     height: 100px;
-    background: url("/highlight2.svg") no-repeat center;
+    background: url(${highlight}) no-repeat center;
     background-size: contain;
   }
 

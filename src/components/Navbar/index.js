@@ -1,7 +1,6 @@
 import {Bars, Logo, MenuLink} from "./Navbar.styles";
 import React, {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import Link from "next/Link";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {colors} from "../variables";
 import styled from "styled-components";
@@ -17,18 +16,10 @@ export const Navbar = () => {
                 <FontAwesomeIcon icon={faBars}/>
             </Bars>
             <Menu isOpen={isOpen}>
-                <Link href="#" passHref>
-                    <MenuLink>Início</MenuLink>
-                </Link>
-                <Link href="#quem-sou-eu" passHref>
-                    <MenuLink>Sobre</MenuLink>
-                </Link>
-                <Link href="#projetos" passHref>
-                    <MenuLink>Projetos</MenuLink>
-                </Link>
-                <Link href="#contato" passHref>
-                    <MenuLink>Contato</MenuLink>
-                </Link>
+                <MenuLink href="#">Início</MenuLink>
+                <MenuLink href="#quem-sou-eu">Sobre</MenuLink>
+                <MenuLink href="#projetos">Projetos</MenuLink>
+                <MenuLink href="#contato">Contato</MenuLink>
             </Menu>
         </Nav>
     );
