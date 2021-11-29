@@ -88,7 +88,7 @@ export const projects = [
         tags: ["html", "css", "javascript", "api"],
         main: ["JavaScript"],
         source: "https://github.com/tozeos/ip-address-tracker-master",
-        demo: "https://hardcore-hodgkin-f54b09.netlify.app/",
+        demo: "https://tozeos.dev.br/ip-address-tracker/",
     },
 
     {
@@ -98,7 +98,7 @@ export const projects = [
         tags: ["html", "css", "javascript", "sass", "nextjs"],
         main: ["React"],
         source: "https://github.com/tozeos/lupuz-studio",
-        demo: "https://lupuz-studio.vercel.app/",
+        demo: "https://www.studiolupuz.com.br/",
     },
 
 
@@ -108,7 +108,17 @@ export const projects = [
         description: "Minhas soluções de desafios do beecrowd (antigo URI Online Judge) em JavaScript, PHP e posteriormente em Python. Estes eu faço quando não tenho muita coisa para fazer e fico entediado.",
         tags: ["javascript", "php", "python"],
         main: ["JavaScript"],
-        source: "https://github.com/tozeos/uri-solucoes",
+        source: "https://github.com/tozeos/beecrowd-challenges",
         demo: "#",
+    },
+
+        {
+        id: 8,
+        title: "Rest Countries API with color theme switcher",
+        description: "The challenge is to integrate with the REST Countries V2 API to pull country data and display it like in the designs.",
+        tags: ["javascript", "react", "styled components"],
+        main: ["JavaScript"],
+        source: "https://github.com/tozeos/rest-countries-api-with-color-theme-switcher-master",
+        demo: "https://rest-countries-api-with-color-theme-switcher-master-eight.vercel.app/",
     },
 ];
