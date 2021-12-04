@@ -1,9 +1,28 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {paragraph, socialLinks} from "../variables";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {AboutSection, AboutText, Donate, Drawing, SocialIcons} from "./About.styles";
+import {colors, paragraph, socialLinks} from "../variables";
+import {faEnvelope, faCompactDisc} from "@fortawesome/free-solid-svg-icons";
+import {AboutSection, AboutText, Donate, Drawing, SocialIcons, Song} from "./About.styles";
 import {faGithubAlt, faLinkedinIn, faTwitch, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import tozeos from "../../img/tozeos.webp"
+
+import {useLastFM} from 'use-last-fm';
+
+const CurrentlyPlaying = () => {
+    const lastFM = useLastFM('tozeos', process.env.REACT_APP_LASTFM_API_KEY);
+
+    if (lastFM.status !== 'playing') {
+        return <Song href="https://www.last.fm/user/tozeos">Não estou escutando nada.</Song>;
+    }
+
+    return (
+        <Song href={lastFM.song.url}>
+            <FontAwesomeIcon icon={faCompactDisc} color={lastFM.song.artist === 'Queen' ? colors.yellow : colors.white} fixedWidth pulse/>
+            <p>
+                Ouvindo <b>{lastFM.song.name}</b> de <b>{lastFM.song.artist}</b>.
+            </p>
+        </Song>
+    );
+};
 
 export const About = () => {
     const pix = "9f54fff1-0097-4338-9201-60cfa41ce33e";
@@ -55,6 +74,7 @@ export const About = () => {
                     Hey, quer contribuir no meu aprendizado? Faça uma doação e me ajude a comprar um café! Clique para
                     copiar a Chave Pix.
                 </Donate>
+                <CurrentlyPlaying/>
             </AboutText>
         </AboutSection>
     );

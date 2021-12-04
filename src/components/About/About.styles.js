@@ -136,3 +136,17 @@ export const SocialIcons = styled.ul`
     }
   }
 `;
+
+export const Song = styled.a`
+  background-color: ${colors.black2};
+  color: ${colors.white};
+  padding: .6rem 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  p {
+    font-size: .8rem !important;
+  }
+`

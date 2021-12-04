@@ -16,7 +16,7 @@ export const Navbar = () => {
                 <FontAwesomeIcon icon={faBars}/>
             </Bars>
             <Menu isOpen={isOpen}>
-                <MenuLink href="#">Início</MenuLink>
+                <MenuLink href="/">Início</MenuLink>
                 <MenuLink href="#quem-sou-eu">Sobre</MenuLink>
                 <MenuLink href="#projetos">Projetos</MenuLink>
                 <MenuLink href="#contato">Contato</MenuLink>
