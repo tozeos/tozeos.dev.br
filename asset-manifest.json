@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7283e7a1.chunk.css",
+    "main.js": "/static/js/main.b6d19056.chunk.js",
+    "main.js.map": "/static/js/main.b6d19056.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4d89dec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4d89dec0.js.map",
+    "static/js/2.24489dee.chunk.js": "/static/js/2.24489dee.chunk.js",
+    "static/js/2.24489dee.chunk.js.map": "/static/js/2.24489dee.chunk.js.map",
+    "static/js/3.f3e48e7c.chunk.js": "/static/js/3.f3e48e7c.chunk.js",
+    "static/js/3.f3e48e7c.chunk.js.map": "/static/js/3.f3e48e7c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7283e7a1.chunk.css.map": "/static/css/main.7283e7a1.chunk.css.map",
+    "static/js/2.24489dee.chunk.js.LICENSE.txt": "/static/js/2.24489dee.chunk.js.LICENSE.txt",
+    "static/media/Froggit.eaf515dc.gif": "/static/media/Froggit.eaf515dc.gif",
+    "static/media/blob.f9177988.svg": "/static/media/blob.f9177988.svg",
+    "static/media/highlight2.9e1d8456.svg": "/static/media/highlight2.9e1d8456.svg",
+    "static/media/tozeos.cc3b921e.webp": "/static/media/tozeos.cc3b921e.webp",
+    "static/media/underline.8691ac8d.svg": "/static/media/underline.8691ac8d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d89dec0.js",
+    "static/js/2.24489dee.chunk.js",
+    "static/css/main.7283e7a1.chunk.css",
+    "static/js/main.b6d19056.chunk.js"
+  ]
+}
