@@ -5,12 +5,11 @@ import {db} from "../firebase-config";
 export const projectsCollectionRef = collection(db, "projects")
 
 export const colors = {
-    yellow: "#FED215",
-    white: "#FFFFFF",
-    black1: "#121212",
-    black2: "#1A1A1A",
-    blue: "#3ABEF0",
-    purple: "#3A2D78"
+    yellow: "rgba(254, 210, 21, 1)",
+    yellow2: "rgba(254,210,21,0.1)",
+    black1: "rgba(19, 18, 18, 1)",
+    black2: "rgba(26, 26, 26, 1)",
+    white: "rgba(249, 250, 251, 1)"
 };
 
 export const Container = styled.div`

@@ -4,19 +4,23 @@ import {colors} from "../components/variables";
 import {Footer} from "../components/Footer";
 import {Navbar} from "../components/Navbar";
 import sapinho from "../img/Froggit.gif"
+import {GlobalStyle} from "../components/GlobalStyles/GlobalStyles";
 
 export const NotFound = () => {
     return (
-        <Background>
-            <Navbar/>
-            <section>
-                <FourOFour>404</FourOFour>
-                <p>Página não encontrada. Volte ao <a href="/">início</a>.</p>
-                <br/>
-                <img src={sapinho} alt="Sapinho"/>
-            </section>
-            <Footer/>
-        </Background>
+        <>
+            <GlobalStyle/>
+            <Background>
+                <Navbar/>
+                <section>
+                    <FourOFour>404</FourOFour>
+                    <p>Página não encontrada. Volte ao <a href="/">início</a>.</p>
+                    <br/>
+                    <img src={sapinho} alt="Sapinho"/>
+                </section>
+                <Footer/>
+            </Background>
+        </>
     )
 }
 
@@ -37,7 +41,7 @@ const Background = styled.div`
     p {
       color: ${colors.white};
     }
-    
+
     a {
       color: ${colors.yellow};
     }

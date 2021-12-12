@@ -5,6 +5,7 @@ import {getDocs, addDoc, deleteDoc, doc} from "firebase/firestore";
 import {colors, Container, projectsCollectionRef} from "../components/variables";
 import styled from "styled-components";
 import {db} from "../firebase-config";
+import {GlobalStyle} from "../components/GlobalStyles/GlobalStyles";
 
 export const Panel = () => {
     const [projects, setProjects] = useState([])
@@ -43,6 +44,7 @@ export const Panel = () => {
 
     return (
         <>
+            <GlobalStyle/>
             <Navbar/>
             <Container>
                 <PanelWrapper>

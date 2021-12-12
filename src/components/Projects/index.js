@@ -5,7 +5,7 @@ import {useState, useEffect} from "react";
 import {getDocs} from "firebase/firestore";
 import {projectsCollectionRef} from "../variables";
 
-export const Projects = () => {
+export const ProjectsList = () => {
     const [projects, setProjects] = useState([])
     useEffect(() => {
         const getProjects = async () => {
@@ -14,8 +14,6 @@ export const Projects = () => {
         }
         getProjects()
     }, [])
-
-
 
     return (
         <ProjectsSection id="projetos">
@@ -38,7 +36,7 @@ export const Projects = () => {
                                 }`,
                             }}>
                                 <a href={source} target="_blank" rel="noopener noreferrer nofollow">
-                                    <FontAwesomeIcon icon={faCode}/> Código-fonte
+                                    <FontAwesomeIcon icon={faCode}/> <span>Código-fonte</span>
                                 </a>
                             </li>
                             <li style={{
@@ -47,7 +45,7 @@ export const Projects = () => {
                                 }`,
                             }}>
                                 <a href={demo} target="_blank" rel="noopener noreferrer nofollow">
-                                    <FontAwesomeIcon icon={faExternalLinkAlt}/> Demonstração
+                                    <FontAwesomeIcon icon={faExternalLinkAlt}/> <span>Demonstração</span>
                                 </a>
                             </li>
                         </ProjectLinks>

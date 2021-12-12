@@ -1,7 +1,7 @@
 import React from "react";
-import {Home} from "./Pages/Home"
-import {Panel} from "./Pages/Panel"
-import {NotFound} from "./Pages/NotFound";
+import {Home} from "./pages/Home"
+import {Panel} from "./pages/Panel"
+import {NotFound} from "./pages/NotFound";
 import {BrowserRouter as Router, useRoutes} from "react-router-dom";
 
 const App = () => {

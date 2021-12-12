@@ -114,17 +114,17 @@ export const SocialIcons = styled.ul`
   }
 
   a {
-    background-color: ${colors.yellow};
+    background-color: ${colors.yellow2};
     padding: 18px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-in-out 0s;
-    color: ${colors.black2};
+    color: ${colors.yellow};
     display: block;
 
     :hover {
-      background-color: ${colors.purple};
-      color: ${colors.white};
+      background-color: ${colors.yellow};
+      color: ${colors.black1};
     }
 
     @media screen and (max-width: 1250px) {

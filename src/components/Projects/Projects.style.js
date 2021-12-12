@@ -60,7 +60,7 @@ export const Card = styled.div`
   }
 
   h3 {
-    font-family: Poppins, serif;
+    font-family: 'Poppins', serif;
     font-size: 1.625rem;
     text-transform: uppercase;
     padding-bottom: .5rem;
@@ -84,7 +84,7 @@ export const Tags = styled.ul`
     background-color ${colors.yellow};
     padding: .3rem;
     border-radius: 4px;
-    color: ${colors.black2};
+    color: ${colors.black1};
   }
 `;
 
@@ -94,23 +94,41 @@ export const ProjectLinks = styled.ul`
   gap: 1rem;
   justify-content: flex-start;
 
+  @media (max-width: 425px) {
+    justify-content: center;
+  }
+
   li {
     a {
       width: 100%;
       font-size: 12px;
       color: ${colors.yellow};
-      background-color: ${colors.black2};
-      font-family: 'Poppins', serif;
+      background-color: ${colors.yellow2};
       padding: .5rem;
       border-radius: 5px;
-      border: 1px solid ${colors.yellow};
-      font-weight: 600;
       transition: all 0.3s ease-in-out 0s;
       display: block;
 
+      @media (max-width: 374px) {
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        font-size: 12px;
+        font-family: 'Poppins', serif;
+        font-weight: 600;
+
+        @media (max-width: 374px) {
+          display: none;
+        }
+
+      }
+
       :hover {
         background-color: ${colors.yellow};
-        color: ${colors.black2};
+        color: ${colors.black1};
       }
     }
   }
