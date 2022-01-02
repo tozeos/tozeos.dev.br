@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {colors} from "../variables";
+import ReactPaginate from 'react-paginate';
 
 export const ProjectsSection = styled.section`
   display: flex;
@@ -10,6 +11,45 @@ export const ProjectsSection = styled.section`
   @media screen and (max-width: 425px) {
     margin: 0 1rem;
     padding: 1rem 0;
+  }
+`;
+
+export const MyPaginate = styled(ReactPaginate).attrs({
+    activeClassName: 'active',
+})`
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 5rem;
+
+  li a {
+    border-radius: 7px;
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+  }
+
+  li.previous a,
+  li.next a,
+  li.break a {
+    border-color: transparent;
+  }
+
+  li.active a {
+    background-color: ${colors.yellow} ;
+    border-color: transparent;
+    color: ${colors.black1};
+    min-width: 32px;
+  }
+
+  li.disabled a {
+    color: grey;
+  }
+
+  li.disable,
+  li.disabled a {
+    cursor: default;
   }
 `;
 
