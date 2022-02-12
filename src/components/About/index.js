@@ -16,7 +16,8 @@ const CurrentlyPlaying = () => {
 
     return (
         <Song href={lastFM.song.url}>
-            <FontAwesomeIcon icon={faCompactDisc} color={lastFM.song.artist === 'Queen' ? colors.yellow : colors.white} fixedWidth pulse/>
+            <FontAwesomeIcon icon={faCompactDisc} color={lastFM.song.artist === 'Queen' ? colors.yellow : colors.white}
+                             fixedWidth pulse/>
             <p>
                 Ouvindo <b>{lastFM.song.name}</b> de <b>{lastFM.song.artist}</b>.
             </p>
